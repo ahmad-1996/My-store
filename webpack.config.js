@@ -25,6 +25,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: require.resolve('jquery'),
+        loader: 'expose-loader',
+        options: {
+          exposes: ['$', 'jQuery'],
+        }
+      },
+      {
         test: /\.html$/i,
         loader: 'html-loader',
         options: {
@@ -56,6 +63,19 @@ module.exports = {
             }
           },
         ],
+      },
+	  {
+        test: /\.(svg|eot|woff|woff2|ttf)$/,
+        use: [
+          {
+            loader: "file-loader", 
+            options: {
+              name: '[name].[ext]',
+              outputPath: "fonts",
+              esModule: false,
+            }
+          }
+        ]
       },
       
     ],
