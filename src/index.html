@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" >
+<html lang="ar" dir="rtl" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,13 @@
         <div class="navbar custom-navbar navbar-expand-lg" >
           <div class="container">
             <div class="navbar-header">
-              <a href="." class="navbar-brand">
-               <img src="./images/adidas.png" alt="متجر عربي">
+                <button class="navbar-toggler btn btn-icon collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapsed-menu" >
+                  <i class="fas fa-bars"></i>
+                  </button>
+                  <a href="." class="navbar-toggler btn btn-icon">
+                 <i class="fas fa-shopping-cart"></i>
+                </a>
+                  <a href="." class="navbar-brand">
                 <img src="./images/logo.png" alt="متجر عربي ">
               </a>
             </div>
@@ -53,8 +58,8 @@
              ابحث
             </button>
           </form>
-          <div class="navbar-nav mr-auto">
-            <ul>
+          <div class="collapse navbar-collapse mr-auto" id="navbar-collapsed-menu">
+            <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a href="#" class="nav-link"> الصفحة الرئيسية </a>
             </li>
@@ -78,7 +83,7 @@
             <li class="nav-item">
               <a href="contact.html" class="nav-link"> تواصل معنا</a>
             </li>
-            <li>
+            <li class="d-none d-lg-block">
               <a href="checkout.html" id="btn-shopping-cart" class="btn custom-btn btn-icon"
                 title="عربة الشراء" data-toggle="tooltip" data-placement="bottom">
                 <i class="fas fa-shopping-cart" ></i>
@@ -97,10 +102,10 @@
            <div class="carousel-item active">
              <div class="container">
                <div class="row">
-                 <div class="col-4 offset-2">
+                 <div class=" col-12 col-md-4 offset-lg-2">
                    <img src="images/lacoste_3.png" alt="تي شيرت من بولو">
                  </div>
-                 <div class="col-5">
+                 <div class="col-12 col-lg-5 col-md-8">
                    <div class="product-details">
                      <div class="sale large">
                         50%
@@ -117,10 +122,10 @@
            <div class="carousel-item">
             <div class="container">
               <div class="row">
-                <div class="col-4 offset-2">
+                <div class=" col-12 col-md-4 offset-lg-2">
                   <img src="images/lacoste_3.png" alt="تي شيرت من بولو">
                 </div>
-                <div class="col-5">
+                <div class=" col-12 col-lg-5 col-md-8">
                   <div class="product-details">
                     <div class="sale">
                       خصم 50%
@@ -136,10 +141,10 @@
            <div class="carousel-item">
             <div class="container">
               <div class="row">
-                <div class="col-4 offset-2">
+                <div class=" col-12 col-md-4 offset-lg-2">
                   <img src="images/lacoste_3.png" alt="تي شيرت من بولو">
                 </div>
-                <div class="col-5">
+                <div class=" col-12 col-lg-5 col-md-8">
                   <div class="product-details">
                     <div class="product-category">   تخفيضات   </div>
                     <h1>تي شيرت رجالي من بولو</h1>
@@ -152,10 +157,10 @@
            <div class="carousel-item">
             <div class="container">
               <div class="row">
-                <div class="col-4 offset-2">
+                <div class=" col-12 col-md-4 offset-lg-2">
                   <img src="images/lacoste_3.png" alt="تي شيرت من بولو">
                 </div>
-                <div class="col-5">
+                <div class=" col-12 col-lg-5 col-md-8">
                   <div class="product-details">
                     <div class="product-category">   تخفيضات   </div>
                     <h1>تي شيرت رجالي من بولو</h1>
@@ -176,10 +181,12 @@
           <!--  نهاية الصور المصغرة-->
           <!-- سهمي التنقل -->
           <div>
-          <a href="#carousel-featured" class="carousel-control-prev" data-slide="prev"></a>
-          <i class="fas fa-chevron-left fa-3x"></i>
-          <a href="#carousel-featured" class="carousel-control-next" data-slide="next"></a>
-          <i class="fas fa-chevron-left fa-3x"></i>
+            <a class="carousel-control-prev custom-carousel-control" href="#carousel-featured" data-slide="prev">
+                <i class="fa fa-chevron-right fa-2x"></i>
+            </a>
+            <a class="carousel-control-next custom-carousel-control" href="#carousel-featured" data-slide="next">
+                <i class="fa fa-chevron-left fa-2x"></i>
+            </a>
         </div>
           <!-- نهاية سهمي التنقل -->
        </div>
@@ -188,7 +195,7 @@
         <!--مميّزات المتجر-->
 <div class="container">
      <div class="row">
-      <div id="store-features" class="col-6 offset-3">
+      <div id="store-features" class="col-12 col-md-8 offset-md-2 col-lg-6 offset-3">
       <h3 class="text-center custom-heading">
   مميزات المتجر    
       </h3>
@@ -327,7 +334,7 @@
                                 <!--نهاية منتج-->
 
                                 <!--منتج-->
-                                <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                                <div class="col-lg-3 col-md-4 ">
                                     <div class="card custom-thumbnail">
                                         <div class="overlay">
                                             <button class="btn btn-secondary add-to-cart-btn">
@@ -365,7 +372,7 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <!--منتج-->
-                                <div class="col-lg-3 col-md-4">
+                                <div class="col-lg-3 col-md-4 d-none d-lg-block">
                                     <div class="card custom-thumbnail" data-product="">
                                         <div class="overlay">
                                             <button class="btn btn-default add-to-cart-btn"  >
@@ -1481,5 +1488,84 @@
       </div>
   </div>
   <!-- نهاية الماركات العالمية-->
+  <!-- تذييل الصفحة -->
+  <div id="footer" class="row">
+      <div id="brand-logos" class="col-12 text-center">
+          <span>المتجر وكيل معتمد لكبرى الشركات العالمية</span>
+           <div class="img-container">
+            <img src="./images/lacoste.png" alt="lacost">
+            <img src="./images/adidas.png" alt="adidas">
+            <img src="./images/puma.png" alt="puma">
+            <img src="./images/polo.png" alt="polo">
+          </div>
+        </div>
+     <div id="footer-nav" class="col-12 text-center">
+        <div class="footer-logo">
+            <a href="./">
+            <img src="./images/logo_footer.png" alt="عربي">
+            </a>
+        </div>
+        <div id="footer-nav-links" class="col-12 d-none d-md-block">
+        <a href="." >الصفحة الرئيسية</a>
+        <a href="search.html" >البحث المتقدم </a>
+        <a href="contact.html" > تواصل معنا </a>
+        </div>
+        <div id="newsletter" class="col-6 offset-3">
+        <form>
+                <label for="footer-email">
+                    تابع النشرة البريدية لأحدث العروض
+                </label>
+        </form> 
+            <br>
+            <div class="input-group ">
+            <input  id="footer-email"  class="form-control custom-form-control" 
+                type="email" placeholder="البريد الإلكتروني" name="email" style="direction: rtl;"  required>
+            <button type="submit" class="btn  custom-btn custom-btn-primary2">
+                    متابعة
+            </button>
+            </div>
+        </div>
+    </div>
+  <div id="footer-copyright-social" class="col-12">
+            <div class="container">
+                <div class="clearfix">
+                    <div id="copyright" class="float-right">
+                        جميع الحقوق محفوظة للمتجر سنة 2020
+                    </div>
+                    <div id="social-icons" class="float-left">
+                    <a href="https://www.facebook.com">
+               <i class="fab fa-facebook-square fa-lg"></i>        
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-twitter-square fa-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- تذييل الصفحة  نهاية-->
+ 
+
 </body>
 </html>
